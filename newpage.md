@@ -21,7 +21,7 @@ Through our analysis of the CMU movie dataset, spanning pre and post-9/11 eras, 
 
 # *"Nice to meet you, I'm Data"*: getting familiar with the dataset
 
-![images/dictator_ada](attachment:images/dictator_ada.jpeg)
+![my image](images/dictator_ada.jpeg)
 
 recycle P2, facts and graphs about initial pre-processings
 
