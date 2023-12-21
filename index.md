@@ -11,6 +11,8 @@ Our data analysis journey delves into the captivating intersection of reality an
 
 Through our analysis of the CMU movie dataset, spanning pre and post-9/11 eras, we hope to unearth patterns, trends, and anomalies that illuminate the multifaceted relationship between historical events and cinematic narratives. As we unravel the *reel impact of real-world events* (*tu-dums*), our journey promises to uncover not only the challenges but also the opportunities for more authentic storytelling in the world of cinema. So, grab your popcorn, and.... *Lights... Camera... Action!*
 
+*For more details about the dataset (CMU movie summary corpus), [click this link](https://alexei-erm.github.io/thedataset) :)*
+
 # *"Nice to meet you, I'm Data"*: getting familiar with the dataset
 
 recycle P2, facts and graphs about initial pre-processings
