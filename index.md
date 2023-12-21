@@ -21,39 +21,39 @@ Indeed, a crucial step in our analysis is to establish a clear definition of wha
 
 
 ## Wait another second... Which year range should we use?
-The selected years for the study need to have a consistent rapresentation of Arabs before and after 2001 and exclude other non-negligible real-world events. We thus limit the analysis to movies from 1972 to 2012. We know that there are still historical events that could have changed the arab rapresentation, as the Gulf war in 1990. Still, we think this is a good compromise between the number of film analysed and the other _noisy_ previuns historical events. Speking about events after 2001, we can say that lot of them were triggered by the 9/11 attack, the so called "War on Terror" announced by President Bush, that led to Afghanistan and Iraq wars.
+The selected years for the study need to have a consistent rapresentation of Arabs before and after 2001 and exclude other non-negligible real-world events. We thus limit the analysis to movies from 1972 to 2012. We know that there are still historical events that could have changed the Arab rapresentation, as the Gulf war in 1990. Still, we think this is a good compromise between the number of film analysed and the other _noisy_ previuns historical events. Speking about events after 2001, we can say that lot of them were triggered by the 9/11 attack, the so called "War on Terror" announced by President Bush, that led to Afghanistan and Iraq wars.
 
 ## Uhhh, last definition... what do we mean by a "western" country?
 we define a western country as United States, Canada, and the countries exclusively part of the [Continental Europe](https://en.wikipedia.org/wiki/Europe). We excluding, for instance, Russia and Turkey that are also in Asia. The reason for this choise was to analyse a subset of countries that are culturally similar and reactet to 9/11 in a similar way. We could have chosen also to select only the USA, but this generated a too small subset to be studied.
 
 # [...] the crime and war genre
 
-One initial question we can explore is how the participation of Arab characters in the Crime and War (c&w) genre changed after 2001, if at all. Is this effect more evident for the western countries? This analysis can be made without the use of a movie's plot so it is a great place to start at. Here, we detect arab characters in our dataset directly from the character metadata.  Let's see if some trends can be spotted immediately by plotting simple statistics at first, regarding all character parteciparion and arab character partecipation in w&c movies!
+One initial question we can explore is how the participation of Arab characters in the Crime and War (c&w) genre changed after 2001, if at all. Is this effect more evident for the western countries? This analysis can be made without the use of a movie's plot so it is a great place to start at. Here, we detect Arab characters in our dataset directly from the character metadata.  Let's see if some trends can be spotted immediately by plotting simple statistics at first, regarding all character participation and Arab character partecipation in w&c movies!
 
 ![yearly characters for w&c](images/yearly_ch_w&c.png)
 
 
-< Percentage of characters (overall and arab) in Crime and War movies, per year > 
+< Percentage of characters (overall and Arab) in Crime and War movies, per year > 
 
 - Considering all the characters (blue bars), We can see that there is no clear trend. After 2003 the value seems eventually to decrease, that means a decresing partecipation for characters in w&c movies.
 
-- Arabs (red bars) show a lot of fluctuations during the years, evidently during the last century. This is due to the small partecipation in W&C (less than 5 per year before 2003), generating less reliable percentages. The trend seems to have a local increase between 2002 and 2006. After 2004 arab characters seems to play a higher fraction of these genre films than the overall characters in terms of mean values. Still the uncertainty given by bootstrapping shows that this can be stated only for years 2006, 2011 and 2012, where the confidence intervals do not intersect.
+- The participation of Arab characters (red bars) shows significant fluctuations over the years, particularly evident in the last century. This is due to the small partecipation in W&C (less than 5 per year before 2003), generating less reliable percentages. The trend seems to have a local increase between 2002 and 2006. After 2004 Arab characters seems to play a higher fraction of these genre films than the overall characters in terms of mean values. Still the uncertainty given by bootstrapping shows that this can be stated only for years 2006, 2011 and 2012, where the confidence intervals do not intersect.
 
-In parallel, we filter for films pubblished in western countries, to understand if there is a more evident effect:
+In parallel, we filter for films published in western countries, to understand if there is a more evident effect:
 
 ![yearly characters for w&c, western countries](images/yearly_ch_w&c_we.png)
 The western country time evolution is really similar respect to the all countries case. Accounting for all characters, we notice again a stagnant trend with a decrease after 2003. Arabs show a more evident lack of data before 2000 with large confident interval. Still, we can see the local increase in the interval 2002-2006.
 
-To be more precise on this analysis we look at the feature before and after 2001. This grouping is done to avoid the problem of sparsity of data for arabs, specially doring the last century movies, that leads to high uncertainty.
-We want also to check that a possible increase of arab roles, a subset of the roles, is not due to the increase of the all character partecipation. 
+To be more precise on this analysis we look at the feature before and after 2001. This grouping is done to avoid the problem of sparsity of data for Arabs, specially doring the last century movies, that leads to high uncertainty.
+We want also to check that a possible increase of Arab roles, a subset of the roles, is not due to the increase of the all character partecipation. 
 
 
 ![Coefficients before balancing](images/Coefficients_before_bal.png)
 The linear regression gives significant results in all the 4 cases.
-For both all countries and the Western subset we see a negative coefficient looking at the charachìters in general (yellow dots). It means a decrease of partecipation in w&c movies comparing the ones pubblished before and after 9/11. On the contrary, Arabs show a positive correlation (green dots), but we cannot say that the one for wester countries is higher since the error bars intersect.  
+For both all countries and the Western subset we see a negative coefficient looking at the characters in general (yellow dots). It means a decrease of partecipation in w&c movies comparing the ones published before and after 9/11. On the contrary, Arabs show a positive correlation (green dots), but we cannot say that the one for western countries is higher since the error bars intersect.  
 
-The positive correlation for the arabs could be also caused by confounders.  To investigate the causal link, we use an observational study scheme, with the treatment as the pubblication after 2001 and the outcome as the fraction of arab characters in w&c movies. This is done for both the whole world and the western contries, generating two studies.
-Also, to say that the trend for arabs is not due to a general increase of the all characters trend, we should set another observational study and compare the output coefficients. This is out of the scope of our analysis, that uses the results showed before as a first prove on this.
+The positive correlation for the Arabs could be also caused by confounders.  To investigate the causal link, we use an observational study scheme, with the treatment as the pubblication after 2001 and the outcome as the fraction of Arab characters in w&c movies. This is done for both the whole world and the western contries, generating two studies.
+Also, to say that the trend for Arabs is not due to a general increase of the all characters trend, we should set another observational study and compare the output coefficients. This is out of the scope of our analysis, that uses the results showed before as a first prove on this.
 
 ### Observational study on w&c movies
 
@@ -66,26 +66,26 @@ We have the following treatment (**T**) and outcome (**O**)
 First of all, we need to discuss the possible confounders (**C**) of the causal analysis. We treat the following features:
 - **C1** Geographical zone of the movie pubblication
     - effect on the treatment: cinema industy can be more or less active in a country depending on cultural and economic effect that may change during the years. Es: boom of the indian industry after 2000
-    - effect on the outcome: different countries have different cultures, so different incidence on a certain genre. es: a c&w film with arab caracters could be pubblished more probably in the US
+    - effect on the outcome: different countries have different cultures, so different incidence on a certain genre. es: a c&w film with Arab caracters could be published more probably in the US
 - **C2** Sex of the actor: 
-    - effect on the treatment: arab females could be obstacled to be actress for religious rules that were stricter in the past, so there could be less female arab characters in the past 
+    - effect on the treatment: Arab females could be obstacled to be actress for religious rules that were stricter in the past, so there could be less female Arab characters in the past 
     - effect on the outcome: male characters could be used more frequently in w&c films
 - **C3** Age of the actor at release 
     - effect on the treatment: during the film history it is possible that the presence of young actors was obtacled by certain legal/cultural rules
     - effect on the outcome: young characters and therefore actors could have a role more frequently in w&c films
 
-The informations on sex and age are simply obtainable from the characters metadata. For the region we used the information on of Movie countries from the Movie metadata grouped the coutries following the [United Nations](https://ourworldindata.org/world-region-map-definitions). For the second observational study **C3** is not a possible confounder since all the western countries, where we hypotyse that the cultural influence is similar, are included in the region "Europe and North America".
+The informations on sex and age are simply obtainable from the characters metadata. For the region we used the information on of Movie countries from the Movie metadata grouped the countries following the [United Nations](https://ourworldindata.org/world-region-map-definitions). For the second observational study **C3** is not a possible confounder since all the western countries, where we hypotyse that the cultural influence is similar, are included in the region "Europe and North America".
 
 ![United nations regions](images/world-regions-sdg-united-nations.png)
 
 
-Two skemes sums up the hypotised causal links stated before:
+Two skemes sums up the hypothesized causal links stated before:
 ![causal diagrams](images/Causal_diagram.png)
 < present OLS results >  + western filter
 
 < present observationnal study results > + western filter
 
-To conclude this analysis, we can say that there is a significant increase in participation of arab characters in w&c movies, [intensified when accounting only for western countries NOT SIGNIFICANT CF BAR PLOT], which intuitively, makes sense. But this result does not consider the possible positive / negative connotations in the movie. In the following parts, we delve in this more nuanced analysis.
+To conclude this analysis, we can say that there is a significant increase in participation of Arab characters in w&c movies, [intensified when accounting only for western countries NOT SIGNIFICANT CF BAR PLOT], which intuitively, makes sense. But this result does not consider the possible positive / negative connotations in the movie. In the following parts, we delve in this more nuanced analysis.
 
 
 
@@ -95,7 +95,7 @@ Let's now dive into the core of our study: sentiment analysis. Sentiment analysi
 As we want to be sure that the sentiment analysis we perform is correctly related to the arabic characters, we perform this analysis on a range of `n` words before and after the target name (local contexts). 
 As an example, let's consider the movie "House party 2" (1991). Here's an extract of the movie summary, highlighting the detected arabic character.
 
-_"Kid and Play get into a fight and **Bilal** then convinces Kid to ask Sydney for money. Kid tries to approache Sydney but Sydney assumes that he wants to break up with her."_
+_"Kid and Play get into a fight and **Bilal** then convinces Kid to ask Sydney for money. Kid tries to approach Sydney but Sydney assumes that he wants to break up with her."_
 
 For example, if `n = 5`, the following chunk of plot summary will be considered as the context around the arabic name _Bilal_.
 
