@@ -20,7 +20,7 @@ author: pinacolADA team
 ###############################################
 
 navbar-links:
-  the dataset: "/thedataset.md"
+  the dataset: "https://alexei-erm.github.io/thedataset"
 
 ################
 # --- Logo --- #
