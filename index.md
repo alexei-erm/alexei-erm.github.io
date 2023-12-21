@@ -13,22 +13,22 @@ Through our analysis of the CMU movie dataset, spanning pre and post-9/11 eras, 
 
 *For more details about the dataset (CMU movie summary corpus), [click this link](https://alexei-erm.github.io/thedataset)*
 
-## Wait a second... How do we detect arab characters?
+## Wait a second... How do we detect Arab characters?
 
-Indeed, an important stepping stone for the analysis is to have a consensus on what do we mean by "Arab" character or location. 
+Indeed, a crucial step in our analysis is to establish a clear definition of what constitutes an "Arab" character or location.
 
 *explain use of chatGPT word list, filtering + muslim VS arabic* --> + matteo's branch 
 
 
-## Wait another second... What year range to use?
-The selected years for the study need to have a consistent rapresentation of arabs before and after 2001 and exclude other non-negligible real-world events. We thus limit the analysis to movies from 1972 to 2012. We know that there are still historical events that could have changed the arab rapresentation, as the Gulf war in 1990. Still, we think this is a good compromise between the number of film analysed and the other _noisy_ previuns historical events. Speking about events after 2001, we can say that lot of them were triggered by the 9/11 attack, the so called "War on Terror" announced by President Bush, that led to Afghanistan and Iraq wars.
+## Wait another second... Which year range should we use?
+The selected years for the study need to have a consistent rapresentation of Arabs before and after 2001 and exclude other non-negligible real-world events. We thus limit the analysis to movies from 1972 to 2012. We know that there are still historical events that could have changed the arab rapresentation, as the Gulf war in 1990. Still, we think this is a good compromise between the number of film analysed and the other _noisy_ previuns historical events. Speking about events after 2001, we can say that lot of them were triggered by the 9/11 attack, the so called "War on Terror" announced by President Bush, that led to Afghanistan and Iraq wars.
 
-## Uhhh, last definition... what do we mean by "western" country?
-we define a western country as United states, Canada and the countries exclusively part of the [continental europe](https://en.wikipedia.org/wiki/Europe). We excluding, for instance, Russia and Turkey that are also in Asia. The reason for this choise was to analyse a subset of countries that are culturally similar and reactet to 9/11 in a similar way. We could have chosen also to select only the USA, but this generated a too small subset to be studied.
+## Uhhh, last definition... what do we mean by a "western" country?
+we define a western country as United States, Canada, and the countries exclusively part of the [Continental Europe](https://en.wikipedia.org/wiki/Europe). We excluding, for instance, Russia and Turkey that are also in Asia. The reason for this choise was to analyse a subset of countries that are culturally similar and reactet to 9/11 in a similar way. We could have chosen also to select only the USA, but this generated a too small subset to be studied.
 
 # [...] the crime and war genre
 
-A first question we can ask is how did the participation of Arab characters in the crime and war (c&w) genre change after 2001, if it changed? Is this effect more evident for the western countries? This analysis can be made without the use of a movie's plot so it is a great place to start at. Here, we detect arab characters in our dataset directly from the character metadata.  Let's see if some trends can be spotted immediately by plotting simple statistics at first, regarding all character parteciparion and arab character partecipation in w&c movies!
+One initial question we can explore is how the participation of Arab characters in the Crime and War (c&w) genre changed after 2001, if at all. Is this effect more evident for the western countries? This analysis can be made without the use of a movie's plot so it is a great place to start at. Here, we detect arab characters in our dataset directly from the character metadata.  Let's see if some trends can be spotted immediately by plotting simple statistics at first, regarding all character parteciparion and arab character partecipation in w&c movies!
 
 ![yearly characters for w&c](images/yearly_ch_w&c.png)
 
