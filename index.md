@@ -13,14 +13,14 @@ Through our analysis of the CMU movie dataset, spanning pre and post-9/11 eras, 
 
 *For more details about the dataset (CMU movie summary corpus), [click this link](https://alexei-erm.github.io/thedataset) :)*
 
-# Wait a second... How do we detect arab characters?
+## Wait a second... How do we detect arab characters?
 
 Indeed, an important stepping stone for the analysis is to have a consensus on what do we mean by "Arab" character or location. 
 
 *explain use of chatGPT word list, filtering + muslim VS arabic* --> + matteo's branch 
 
 
-# Wait another second... What year range to use?
+## Wait another second... What year range to use?
 The selected years for the study need to have a consistent rapresentation of arabs before and after 2001 and exclude other non-negligible real-world events. We thus limit the analysis to movies from 1972 to 2012. We know that there are still historical events that could have changed the arab rapresentation, as the Gulf war in 1990. Still, we think this is a good compromise between the number of film analysed and the other _noisy_ previuns historical events. Speking about events after 2001, we can say that lot of them were triggered by the 9/11 attack, the so called "War on Terror" announced by President Bush, that led to Afghanistan and Iraq wars.
 
 ## Uhhh, last definition... what do we mean by "western" country?
