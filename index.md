@@ -15,9 +15,29 @@ Through our analysis of the CMU movie dataset, spanning pre and post-9/11 eras, 
 
 ## Wait a second... How do we detect Arab characters?
 
-Indeed, a crucial step in our analysis is to establish a clear definition of what constitutes an "Arab" character or location.
+Indeed, an important stepping stone for the analysis is to have a consensus on what we mean by "Arab" character or location. It is not an easy game to play. First of all, "Arab people" is a broad concept. It refers to an ethnolinguistic group sharing a common Arabic heritage, culture, and language, primarily found in the Middle East and North Africa. Distinguishing Arab identity is challenging due to the diversity within the Arab world, embracing various ethnicities, customs, and physical traits. Historical migrations, intercultural mixing, fluid identity based on language and culture, overlapping with other identities, and political influences further complicate a precise definition. Arab identity is complex, and is based on shared linguistic and cultural affiliations rather than rigid genetic or racial criteria. Also, there is the problem of name variants, which quite often occurs for arabic names. 
 
-*explain use of chatGPT word list, filtering + muslim VS arabic* --> + matteo's branch 
+However, our goal is identifying those Arabs that clearly distinguish themselves inside the movie plot summaries, predilecting accuracy to number of characters detected in the plot. To do so, we found a list of Arabic given names on Wikipedia:
+
+ [https://en.wikipedia.org/wiki/List_of_Arabic_given_names](link)
+
+However, this list still needs some work. In fact, there is the risk of identifying characters inside the plots as arabic even though they are not, as the list is comprehensive of names that could be present not only in arabic culture. We thus used a languange model (chatGPT) to "clean" the list by eliminating possible names that are not mainly arabic.
+
+To actually identify names in the plots to paths have been followed, respectively for the first and the second part of the study.
+- Compare the list of character contained in the dataset character.metadata.tsv with the list of arabic names 
+- Firstly perform NER (Named Entity Recognition) and then compare entities in teh plots identified as "PERSON" with the list of arabic names.
+
+This way we want in one case to choose the characters we have metadata about (needed for the observational study), while on the other case we identify characters inside the movie plots (to perform sentiment analysis).
+
+In particular, to verify the quality of this second methodology, we asked a large language model (chatGPT) to identify arabic characters in a subset of 50 randomly chosen movie plots. We then compared the names extracted by chatGPT and the ones resulting from our methodology. The result was as expected: chatGPT detected many more arabic characters than us, which is justified considering that it can detect names that are not present in the list but are cosidered arabs for the context they are in. Note that NER understands the context for the identification of entities, but our methodology does not allow to say if a name is arab based on the context.
+ The important result is that in only 3/50 cases our model detects an arabic character and chatGPT does not. This is the most dangerous situation which could occur, as we would be treating a non-arabic character as arab, making our analysis inexact. This phenomenon is very restricted. Here are shown the first 5 examples resulting from the validation     
+| movie_name                     | arab_names_in_plots_chatGPT                             | our_results      |
+|---------------------------------|--------------------------------------------------------|-------------------|
+| Mike Bassett: England Manager   | [Lonnie Urquart, Bashir]                                | [Bashir]          |
+| Rog                             | [Uday Singh Rathod, Maya Solomon, Harsh, Ali, Shyamoli] | [Ali]             |
+| Be Cool                         | []                                                     | [Raji]            |
+| Sabah                           | [Sabah, Majid, Souhaire]                                | [Majid, Sabah]    |
+| Khuda Ke Liye                   | [Mansoor, Sarmad, Mary/Mariam, Dave, Maulana]           | [Sarmad]          |
 
 
 ## Wait another second... Which year range should we use?
