@@ -10,17 +10,21 @@
 ############################
 
 # Name of website
----
-title: pinacolADA datastory
+title: My Website
+
 # Your name to show in the footer
-author: pinacolADA team
----
+author: Some Person
+
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
-  the dataset: "https://alexei-erm.github.io/thedataset"
+  About Me: "aboutme"
+  Resources:
+    - Beautiful Jekyll: "https://beautifuljekyll.com"
+    - Learn markdown: "https://www.markdowntutorial.com/"
+  Author's home: "https://deanattali.com"
 
 ################
 # --- Logo --- #
