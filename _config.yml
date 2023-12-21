@@ -11,23 +11,23 @@
 
 # Name of website
 ---
-title: our ada project
+title: pinacolADA datastory
 
 cover-img: "images/dictator_ada.jpg"
 
 # Your name to show in the footer
-author: Some Person
+author: pinacolADA team
 ---
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
+  About Us: "newpage"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    - Beautiful Jekyll: "https://epfl-ada.github.io/teaching/fall2023/cs401/"
+    - Learn markdown: "https://epfl-ada.github.io/teaching/fall2023/cs401/"
+  Link test: "https://epfl-ada.github.io/teaching/fall2023/cs401/"
 
 ################
 # --- Logo --- #
