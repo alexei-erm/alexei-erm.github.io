@@ -59,5 +59,60 @@ use P2's word clouds + LDA for topic modeling
 
 
 # Sentiment analysis
+Let's now dive into the core of our study: sentiment analysis. Sentiment analysis is the process of analyzing digital text to determine if the emotional tone of the message is positive, negative, or neutral. Our objective here is to understand if there is a significant change of sentiment towards arabic characters when depicted in US and Europe movies (i.e. "Western countries"). 
 
+As we want to be sure that the sentiment analysis we perform is correctly related to the arabic characters, we perform this analysis on a range of `n` words before and after the target name (local contexts). 
+As an example, let's consider the movie "House party 2" (1991). Here's an extract of the movie summary, highlighting the detected arabic character.
+
+_"Kid and Play get into a fight and **Bilal** then convinces Kid to ask Sydney for money. Kid tries to approache Sydney but Sydney assumes that he wants to break up with her."_
+
+For example, if `n = 5`, the following chunk of plot summary will be considered as the context around the arabic name _Bilal_.
+
+_"Play get into a fight and **Bilal** then convinces Kid to ask Sydney"_
+
+To determine the optimal context window size for sentiment analysis, we conducted a manual exploration of hyperparameters (hyperparameter tuning). This involved iteratively trying different sizes and examining example outputs to assess the impact on sentiment analysis results. By visually inspecting the sentiment context around Arabic names in sample plots, the most effective context window size was identified as `n = 9`. 
+
+All of this said, let's have a look at the evolution of sentiment throughout the years.
+
+To perform sentiment analysis and get sentiment polarity scores, VADER model is used. This model evaluates both polarity (positive/negative) and intensity (strength) of emotion of each word in a text. Then, it adds them up to obtain the sentiment score of the entire body. The model distinguishes 5 sentiment polarities:
+- positive
+- negative
+- neutral
+- compound
+
+The compound score is the sum of positive, negative & neutral scores which is then normalized between -1 (most extreme negative) and +1 (most extreme positive).
+
+![my image](images/mean_sentiment_year_pos_neg.png)
+
+![my image](images/mean_sentiment_year_comp.png)
+
+The evolution year-by-year does not show us with a clear change of trend before and after 2001. The confidence intervals are almost always overlapped and not much can be stated even for the difference between positive and negative sentiment.
+
+Let's now cumulate the sentiment scores of the range of years $[1972,2001]$ and $(2001,2012]$.  We can perform a t-test between the two distributions, respectively for compound, positive, and negative sentiment, obtaining the following results.
+
+- The p-value for the compound sentiment scores is: 0.045
+- The p-value for the positive sentiment scores is: 0.031
+- The p-value for the negative sentiment scores is: 0.56
+
+These results mean that there is a significant difference between the compound and positive sentiment distribution with a significance level of $\alpha = 0.05$. We can thus look into the distributions.
+
+<div style="text-align:center">
+  <img src="images/distributions_pos_neg.png" alt="my image" >
+</div>
+
+<div style="text-align: center;">
+  <img src="images/distributions_comp.png" alt="my image" style="width: 50%;">
+</div>
+
+
+As it is visible from these plots, positive sentiment scores after the year 2001 are consistently below the correspondat before 2001. On the other hand, negative sentiment scores after 2001 are consistently higher than before 2001 (even though this difference cannot be considered significant from the t-test result). The compound plot summarizes these results, as it is clear how a negative compound score (negative sentiment) is dominated by "after 2001" and a positive compound score (positive sentiment) is dominated by "before 2001".
+
+Let's now visualize the most common words for the local contexts around arabic characters, via a wordcloud representation.
+
+<div style="text-align:center">
+  <img src="images/wordcloud.png" alt="my image" >
+</div>
+
+
+It is interesting to notice how some semantically negative words increase theire frequency after 2001 (kill, bomb). However, it is difficult to actually appreaciate a big difference between the two situations with such a representation.
 
