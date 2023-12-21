@@ -23,7 +23,7 @@ author: pinacolADA team
 ###############################################
 
 navbar-links:
-  About Us: "newpage"
+  the dataset: "thedataset.md"
 
 ################
 # --- Logo --- #
