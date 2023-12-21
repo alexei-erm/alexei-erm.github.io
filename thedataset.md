@@ -9,6 +9,6 @@ The dataset, available at [this link](http://www.cs.cmu.edu/~ark/personas/), is 
 - Movie box office revenue, genre, release date, runtime, and language
 - Character names and aligned information about the actors who portray them, including gender and estimated age at the time of the movie's release
 
-Here are some interesting visualizations for the dataset:
+Here are some interesting visualizations:
 
 
