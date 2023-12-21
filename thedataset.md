@@ -1,6 +1,7 @@
 ---
 layout: page
-title: "For the curious reader, here are some facts about the CMU movie dataset !"
+title: "The Dataset"
+subtitle: "For the curious reader, here are some facts about the CMU movie dataset !"
 cover-img: "images/datascience.jpeg"
 ---
 
