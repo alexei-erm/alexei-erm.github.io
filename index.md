@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Representation of Arabs in cinema before and after 2001
+title: 9/11 and the representation of Arabs in cinema
 cover-img: "images/dictator_ada.jpeg"
 subtitle: Unraveling the Reel Impact of Real-World Events on Arab Representation in Movies
 ---
