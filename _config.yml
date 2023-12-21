@@ -24,10 +24,6 @@ author: pinacolADA team
 
 navbar-links:
   About Us: "newpage"
-  Resources:
-    - Beautiful Jekyll: "https://epfl-ada.github.io/teaching/fall2023/cs401/"
-    - Learn markdown: "https://epfl-ada.github.io/teaching/fall2023/cs401/"
-  Link test: "https://epfl-ada.github.io/teaching/fall2023/cs401/"
 
 ################
 # --- Logo --- #
