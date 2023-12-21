@@ -23,7 +23,7 @@ author: pinacolADA team
 ###############################################
 
 navbar-links:
-  the dataset: "thedataset.md"
+  the dataset: "/thedataset.md"
 
 ################
 # --- Logo --- #
