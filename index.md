@@ -13,10 +13,6 @@ Through our analysis of the CMU movie dataset, spanning pre and post-9/11 eras, 
 
 *For more details about the dataset (CMU movie summary corpus), [click this link](https://alexei-erm.github.io/thedataset) :)*
 
-# *"Nice to meet you, I'm Data"*: getting familiar with the dataset
-
-recycle P2, facts and graphs about initial pre-processings
-
 # Wait a second... How do we detect arab characters?
 
 Indeed, an important stepping stone for the analysis is to have a consensus on what do we mean by "Arab" character or location. 
@@ -27,7 +23,7 @@ Indeed, an important stepping stone for the analysis is to have a consensus on w
 # Wait another second... What year range to use?
 The selected years for the study need to have a consistent rapresentation of arabs before and after 2001 and exclude other non-negligible real-world events. We thus limit the analysis to movies from 1972 to 2012. We know that there are still historical events that could have changed the arab rapresentation, as the Gulf war in 1990. Still, we think this is a good compromise between the number of film analysed and the other _noisy_ previuns historical events. Speking about events after 2001, we can say that lot of them were triggered by the 9/11 attack, the so called "War on Terror" announced by President Bush, that led to Afghanistan and Iraq wars.
 
-## Uh, last definition... what is a western country
+## Uhhh, last definition... what is a "western" country?
 we define a western country as United states, Canada and the countries exclusively part of the [continental europe](https://en.wikipedia.org/wiki/Europe). We excluding, for instance, Russia and Turkey that are also in Asia. The reason for this choise was to analyse a subset of countries that are culturally similar and reactet to 9/11 in a similar way. We could have chosen also to select only the USA, but this generated a too small subset to be studied.
 
 # [...] the crime and war genre
