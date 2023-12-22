@@ -23,6 +23,8 @@ As can be seen in the figure above, which is initially surprising, most arab cha
 
 ![arabcharperyear_regions](images/arabcharperyear_regions.png)
 
+From the number of arab-named characters per year represented in the figure above, we concluded that our project was feasible, as the sample was not small enough to be negligible and large enough for meaningful analysis.
+
 ![arabcharpermoviegenre](images/arabcharpermoviegenre.png)
 
 
