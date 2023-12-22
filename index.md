@@ -118,13 +118,13 @@ We use the Latent Dirichlet Allocation (LDA) model, a widely used technique in n
 A key aspect of the analysis is the preprocessing part where we prepare the textual data by tokenizing the summaries into lists of words. We then create a Gensim Dictionary to convert the words into unique numerical identifiers. Finally, a bag-of-words representation is generated for each movie summary using the dictionary, resulting in the corpus containing the document-term matrix. We then preprocess the text to remove stopwords and character names from the movie plots tailored for the LDA model. This step ensures that the topic modeling process is not influenced by recurring character names or common stopwords, thereby enhancing the precision of the thematic analysis. 
 
 <div style="display: flex; justify-content: center; width: 100%;">
-    <iframe src="/images/lda_before.html" width="100%" height="800px"></iframe>
+    <iframe src="/images/lda_before.html" width="100%" height="900px"></iframe>
 </div>
 
 The plot above is for movies before 2001, while the one bellow is after 2001.
 
 <div style="display: flex; justify-content: center; width: 100%;">
-    <iframe src="/images/lda_after.html" width="100%" height="800px"></iframe>
+    <iframe src="/images/lda_after.html" width="100%" height="900px"></iframe>
 </div>
 
 
