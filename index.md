@@ -147,7 +147,7 @@ To determine the optimal context window size for sentiment analysis, we conducte
 
 All of this said, let's have a look at the evolution of sentiment throughout the years.
 
-To perform sentiment analysis and get sentiment polarity scores, the VADER model is used. This model evaluates both polarity (positive/negative) and intensity (strength) of emotions of each word in a text. Then, it adds them up to obtain the sentiment score of the entire body. The model distinguishes 5 sentiment polarities:
+To perform sentiment analysis and get sentiment polarity scores, the VADER model is used. This model evaluates both polarity (positive/negative) and intensity (strength) of emotions of each word in a text. Then, it adds them up to obtain the sentiment score of the entire body. The model distinguishes 4 sentiment polarities:
 - positive
 - negative
 - neutral
@@ -179,20 +179,22 @@ These results indicate a significant difference between the compound and positiv
 
 From these plots, it is evident that positive sentiment scores after the year 2001 are consistently lower than those before 2001. Conversely, negative sentiment scores after 2001 are consistently higher than before 2001, although this difference is not significant according to the t-test result. The compound plot summarizes these findings, clearly showing how a negative compound score (negative sentiment) is predominantly "after 2001" and a positive compound score (positive sentiment) is mostly "before 2001".
 
-Finally, let's visualize the most common words for the local contexts around Arabic characters, via a word cloud representation.
+Finally, let's visualize the most common words for the local contexts around Arabic characters, via a wordcloud representation.
 
 <div style="text-align:center">
   <img src="images/wordcloud.png" alt="Wordcloud Arabic Characters" >
 </div>
 
-It is interesting to note how some semantically negative words like 'kill' and 'bomb' increase in frequency after 2001. However, it is challenging to appreciate a significant difference between the two situations with this representation.
+It is challenging to appreciate a significant difference between the two situations with this representation. Sematically negative words (like kill) are present both in the representation before and after 2001. 
 
-## So what ? Arab = Terrorist ? 
+Be careful! As our data has been quite limited by filtering, we could not perform a matching on confounders for our characters (target of our sentiment analysis). This means that the obtained results are possibly confounded by the same covariates described in previous sections. 
 
-Our in-depth study reveals that the events of September 11, 2001 have had a significant impact on the representation of Arab characters in Western cinema. The significant increase in their presence in war- and crime-related genres, particularly in Western productions, suggests a cultural reaction to the events of 2001. However, this increase does not necessarily reflect the positive or negative connotations associated with these characters, as our sentiment analysis indicates.
+## So what ? Did Arab characters become evil after 9/11 ? 
+
+Our in-depth study reveals that, limited to our vision of the issue, the events of September 11, 2001 had an impact on the representation of Arab characters in Western cinema. The significant increase in their presence in war- and crime-related genres, particularly in Western productions, suggests a cultural reaction to the events of 2001. However, this increase does not necessarily reflect the positive or negative connotations associated with these characters, as our sentiment analysis indicates.
 
 
-The latter highlighted a drop in positive and a rise in negative feelings towards Arab characters after 2001, underlining a tendency towards potentially stereotypical or conflicting representations. Topic modeling showed no significant change in the themes associated with Arab characters, indicating a constancy of underlying themes despite the changing tone.
+The latter hinted a drop in positive and a rise in negative feelings towards Arab characters after 2001, underlining a tendency towards potentially stereotypical or conflicting representations. Finally, topic modeling showed no significant change in the themes associated with Arab characters, indicating a constancy of underlying themes despite the changing tone.
 
 
 In conclusion, our research highlights the complexity of Arab representation in Western cinema and the importance of a critical approach to media consumption. It offers valuable insights for those seeking to portray Arab characters in a more authentic and nuanced way. Recent events in the Near and Middle East, like Arab Spring, have also contributed to the stereotyping of Arabs, an aspect that could be explored in future studies.
