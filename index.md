@@ -187,4 +187,12 @@ Finally, let's visualize the most common words for the local contexts around Ara
 
 It is interesting to note how some semantically negative words like 'kill' and 'bomb' increase in frequency after 2001. However, it is challenging to appreciate a significant difference between the two situations with this representation.
 
-## What can we conclude?
+## So what ? Arab = Terrorist ? 
+
+Our in-depth study reveals that the events of September 11, 2001 have had a significant impact on the representation of Arab characters in Western cinema. The significant increase in their presence in war- and crime-related genres, particularly in Western productions, suggests a cultural reaction to the events of 2001. However, this increase does not necessarily reflect the positive or negative connotations associated with these characters, as our sentiment analysis indicates.
+
+
+The latter highlighted a drop in positive and a rise in negative feelings towards Arab characters after 2001, underlining a tendency towards potentially stereotypical or conflicting representations. Topic modeling showed no significant change in the themes associated with Arab characters, indicating a constancy of underlying themes despite the changing tone.
+
+
+In conclusion, our research highlights the complexity of Arab representation in Western cinema and the importance of a critical approach to media consumption. It offers valuable insights for those seeking to portray Arab characters in a more authentic and nuanced way. Recent events in the Near and Middle East have also contributed to the stereotyping of Arabs, an aspect that could be explored in future studies.
