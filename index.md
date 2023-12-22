@@ -5,10 +5,6 @@ cover-img: "images/dictator_ada.jpeg"
 subtitle: Unraveling the Reel Impact of Real-World Events on Arab Representation in Movies
 ---
 
-<div style="display: flex; justify-content: center; width: 100%;">
-    <iframe src="/images/lda_after.html" width="100%" height="750px"></iframe>
-</div>
-
 In the realm of cinema, the silver screen not only reflects our collective imagination but also mirrors the complex tapestry of societal changes and historical events. One such moment that reverberated globally was the tragic day of September 11, 2001. Beyond its immediate and profound impact on geopolitics, security measures, and the psyche of nations, the events of 9/11 had a far-reaching influence on the cultural landscape, including the portrayal of Arab identities in the movies.
 
 Our data analysis journey delves into the intersection of reality and reel, seeking to understand how one of the most significant events of the 21st century shaped the representation of Arabs in cinema. The lens through which movies depict Arab characters, cultures, and narratives has often been subject to scrutiny, with questions raised about the perpetuation of stereotypes and the impact of real-world events on cinematic storytelling.
@@ -120,6 +116,17 @@ In the "Topic Modeling » section, we try to  present a comprehensive explorati
 We use the Latent Dirichlet Allocation (LDA) model, a widely used technique in natural language processing, to discern latent topics within the movie summaries. This analysis is carried out separately for films released before and after 2001, providing a comparative perspective on how the representation of Arabic characters might have shifted in response to the 9/11 attacks.
 
 A key aspect of the analysis is the preprocessing part where we prepare the textual data by tokenizing the summaries into lists of words. We then create a Gensim Dictionary to convert the words into unique numerical identifiers. Finally, a bag-of-words representation is generated for each movie summary using the dictionary, resulting in the corpus containing the document-term matrix. We then preprocess the text to remove stopwords and character names from the movie plots tailored for the LDA model. This step ensures that the topic modeling process is not influenced by recurring character names or common stopwords, thereby enhancing the precision of the thematic analysis. 
+
+<div style="display: flex; justify-content: center; width: 100%;">
+    <iframe src="/images/lda_before.html" width="100%" height="800px"></iframe>
+</div>
+
+The plot above is for movies before 2001, while the one bellow is after 2001.
+
+<div style="display: flex; justify-content: center; width: 100%;">
+    <iframe src="/images/lda_after.html" width="100%" height="800px"></iframe>
+</div>
+
 
 We can see from the  pyLDA visualization that there is not much difference between the movies before and after the event. In general, when looking through the most frequent words of each topic, we can see the presence of words with bad connotation like kill, bomb, attack , police etc that have an quite high overall term frequency which indicates their importance to the subject. Nevertheless
 we cannot really conclude if there is a shift in 2001 after the event since both models contain topics with the common words having the same distribution.
