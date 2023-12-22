@@ -99,15 +99,15 @@ Two schemes sum up the hypothesized causal links stated before:
 
 ![causal diagrams](images/Causal_diagram.png)
 
-To eliminate the observed covariates, we use them as regressors in the propensity score matching, through a logistic regression model. Before this, the continous variable (actor age) is standardised, whereas the categoricals are converted into dummy indicators. Than, the score, measuring the probability to be treated, is computed and added to the population dataframe. A biparted graph is created between treated (film pubblished after 2001) and control (before 2001) subsets, matching the couples optimising for similar propensity score. We obtain 345 and 140 matched pairs for the first and second studies, that are the base for our analysis.  
-We should remember that the data could still be biased since there are unmeasurable featiure that could still influence both the treatment and the outcome. These are called "unobserved covariates" and are not balanced in the control and treatment groups. Examples are the quality of the movie, the director taste, and interregional differences.
+To eliminate the observed covariates, we use them as regressors in the propensity score matching, through a logistic regression model. Before this, the continuous variable (actor age) is standardised, whereas the categorical are converted into dummy indicators. Then, the score, measuring the probability of being treated, is computed and added to the population data frame. A biparted graph is created between treated (film published after 2001) and control (before 2001) subsets, matching the couples optimising for similar propensity scores. We obtained 345 and 140 matched pairs for the first and second studies, which are the base for our analysis.  
+We should remember that the data could still be biased since there are unmeasurable features that could still influence both the treatment and the outcome. These are called "unobserved covariates" and are not balanced in the control and treatment groups. Examples are the quality of the movie, the director's taste, and interregional cultural and economic differences.
 
 ### What did we find? 
-After balancing, we use the linar regression model, as done before the observational study, to understand if there is still a positive correlation between being an Arab character in a movie after 2001 and partecipating in a w&c movie:
+After balancing, we use the linear regression model, as done before the observational study, to understand if there is still a positive correlation between being an Arab character in a movie after 2001 and participating in a w&c movie:
 
 ![Coefficients after balancing](images/Coefficients_after_bal.png)
 
-The results give support to the existance of a causal link exists and was not confounded by the observed variables. In fact, both the models give a positive correlation and significant p-value. In addition, we can state that this correlation intensifies when accounting only for western countries. This intuitively makes sense since these countrise were the ones where 9/11 had the biggest cultural impact. This result does not consider the possible positive or negative connotations in the movies. In the following parts, we delve into this more nuanced analysis.
+The results give support to the existence of a causal link, not confounded by the observed variables. In fact, both models give a positive correlation and significant p-value. In addition, we can state that this correlation intensifies when accounting only for Western countries. This intuitively makes sense since these countrise were the ones where 9/11 had the biggest cultural impact. This result does not consider the possible positive or negative connotations in the movies. In the following parts, we delve into this more nuanced analysis.
 
 # Sentiment Analysis
 
