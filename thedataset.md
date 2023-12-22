@@ -15,3 +15,5 @@ Here are some interesting visualizations:
 
 ![ethnicities all]("images/ethnicities.png")
 
+
+
