@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 9/11 and the representation of Arabs in cinema
+title:<div style="margin-top: 30px;"> 9/11 and the representation of Arabs in cinema
 cover-img: "images/dictator_ada.jpeg"
 subtitle: Unraveling the Reel Impact of Real-World Events on Arab Representation in Movies
 ---
