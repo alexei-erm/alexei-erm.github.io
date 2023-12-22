@@ -103,11 +103,11 @@ To eliminate the observed covariates, we use them as regressors in the propensit
 We should remember that the data could still be biased since there are unmeasurable features that could still influence both the treatment and the outcome. These are called "unobserved covariates" and are not balanced in the control and treatment groups. Examples are the quality of the movie, the director's taste, and interregional cultural and economic differences.
 
 ### What did we find? 
-After balancing, we use the linear regression model, as done before the observational study, to understand if there is still a positive correlation between being an Arab character in a movie after 2001 and participating in a w&c movie:
+After balancing, we use the linear regression model, as done before the observational study, to understand if there is still a positive correlation between being an Arab character in a movie after 2001 and participating in a W&C movie:
 
 ![Coefficients after balancing](images/Coefficients_after_bal.png)
 
-The results give support to the existence of a causal link, not confounded by the observed variables. In fact, both models give a positive correlation and significant p-value. In addition, we can state that this correlation intensifies when accounting only for Western countries. This intuitively makes sense since these countrise were the ones where 9/11 had the biggest cultural impact. This result does not consider the possible positive or negative connotations in the movies. In the following parts, we delve into this more nuanced analysis.
+The results give support to the existence of a causal link, not confounded by the observed variables. Both models give positive coefficients with a significant p-value, with a 6% (all countries) and 12% (western countries) increase in probability for Arabs' participation in W&C movies. We can state that this correlation intensifies when accounting only for Western countries. This intuitively makes sense since these countries were the ones where 9/11 had the biggest cultural impact. This result does not consider the possible positive or negative connotations in the movies. In the following parts, we delve into this more nuanced analysis.
 
 # Sentiment Analysis
 
