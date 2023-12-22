@@ -13,7 +13,10 @@ Here are some interesting visualizations:
 
 ![moviesperyear]("images/moviesperyear.png")
 
+Some of our preliminary
 ![ethnicities all]("images/ethnicities.png")
+
+
 
 
 
