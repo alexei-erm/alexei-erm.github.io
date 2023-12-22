@@ -13,8 +13,20 @@ Here are some interesting visualizations:
 
 ![moviesperyear]("images/moviesperyear.png")
 
-Some of our preliminary
+Some of our preliminary analysis consisted of exploring the ethnicities of actors and characters in the dataset to assess the feasibility of our project:
+
 ![ethnicities all]("images/ethnicities.png")
+
+![ethnicities all]("images/ethnicities.png")
+
+![arabcharpercountry]("images/arabcharpercountry.png")
+
+![arabcharperyear_regions]("images/arabcharperyear_regions.png")
+
+![arabcharpermoviegenre]("images/arabcharpermoviegenre.png")
+
+
+
 
 
 
