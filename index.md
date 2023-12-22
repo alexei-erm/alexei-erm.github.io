@@ -184,7 +184,7 @@ Finally, let's visualize the most common words for the local contexts around Ara
   <img src="images/wordcloud.png" alt="Wordcloud Arabic Characters" >
 </div>
 
-It is challenging to appreciate a significant difference between the two situations with this representation. Sematically negative words (like kill) are present both in the representation before and after 2001. 
+It is challenging to appreciate a significant difference between the two situations with this representation. Sematically negative words are present both in the representation before and after 2001. The word "kill", for example, is slightly bigger after 2001 but this is not enough for conclusive statements.
 
 Be careful! As our data has been quite limited by filtering, we could not perform a matching on confounders for our characters (target of our sentiment analysis). This means that the obtained results are possibly confounded by the same covariates described in previous sections. 
 
