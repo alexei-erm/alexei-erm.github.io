@@ -78,7 +78,6 @@ We have the following treatment (**T**) and outcome (**O**)
 - **T** Arab character participates in a film released after 2001
 - **O** Movie belongs to a w&c genre
 
-
 First, we need to discuss the causal analysis's confounders (**C**). We treat the following features:
 - **C1** Geographical zone of the movie publication
     - effect on the treatment: The cinema industry can be more or less active in a country depending on cultural and economic effects that may change over the years. E.g. boom of the Indian industry after 2000
@@ -143,7 +142,7 @@ If `n = 5`, the following chunk of plot summary would be considered as the conte
 
 _"Play get into a fight and **Bilal** then convinces Kid to ask Sydney"_
 
-To determine the optimal context window size for sentiment analysis, we conducted a manual exploration of hyperparameters (hyperparameter tuning). This involved iteratively trying different sizes and visually inspecting example outputs to assess the relevancy of the context around the name. As a result, the most effective context window size was identified as `n = 9`. This value is a good compromise between containing words related to the target name, and not being confounded by other entities' attributes.
+To determine the optimal context window size for sentiment analysis, we conducted a manual exploration of hyperparameters (hyperparameter tuning). This involved iteratively trying different sizes and visually inspecting example outputs to assess the relevancy of the context around the name. As a result, the most effective context window size was identified as `n = 12`. This value is a good compromise between containing words related to the target name, and not being confounded by other entities' attributes.
 
 All of this said, let's have a look at the evolution of sentiment throughout the years.
 
@@ -164,8 +163,8 @@ The year-by-year evolution does not present a clear change of trend before and a
 Now, let's cumulate the sentiment scores of the range of years 1972-2001 and 2002-2012. A t-test between the two distributions, respectively for compound, positive, and negative sentiment, yields the following results:
 
 - The p-value for the compound sentiment scores is: 0.045
-- The p-value for the positive sentiment scores is: 0.031
-- The p-value for the negative sentiment scores is: 0.56
+- The p-value for the positive sentiment scores is: 0.030
+- The p-value for the negative sentiment scores is: 0.636
 
 These results indicate a significant difference between the compound and positive sentiment distributions at a 5% significance level. We can thus examine the distributions more closely.
 
