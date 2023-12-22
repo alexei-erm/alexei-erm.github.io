@@ -11,4 +11,5 @@ The dataset, available at [this link](http://www.cs.cmu.edu/~ark/personas/), is 
 
 Here are some interesting visualizations:
 
+![moviesperyear]("images/moviesperyear.png")
 
