@@ -28,7 +28,7 @@ From the number of arab-named characters per year represented in the figure abov
 
 ![arabcharpermoviegenre](images/arabcharpermoviegenre.png)
 
-
+Of course, it couldn't be *that* easy! No real trend can be seen in the genres above, and even less any positive/negative connotation. More advanced tools are needed to find meaningdul results, and that is why we believe this project is very interesting! It is now time to go back to the [home page](alexei-erm.github.io) to get into the meat of subject...
 
 
 
