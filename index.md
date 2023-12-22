@@ -106,7 +106,10 @@ After balancing, we use the linear regression model, as done before the observat
 
 ![Coefficients after balancing](images/Coefficients_after_bal.png)
 
-The results give support to the existence of a causal link, not confounded by the observed variables. Both models give positive coefficients showing a 6% (all countries) and 12% (western countries) increase in probability for Arabs' participation in W&C movies. Both results are significative with a p-value smaller than 5%. We can state that this correlation intensifies when accounting only for Western countries, in fact the two confidence intervals, made with standard deviation, do not intersect. This intuitively makes sense since these countries were the ones where 9/11 had the biggest cultural impact. This result does not consider the possible positive or negative connotations in the movies. In the following parts, we delve into this more nuanced analysis.
+The results give support to the existence of a causal link, not confounded by the observed variables. Both models give positive coefficients showing a 6% (all countries) and 12% (western countries) increase in probability for Arabs' participation in W&C movies. In addition, the results are significant with a p-value smaller than 5%. We can state that this correlation intensifies when accounting only for Western countries, in fact the two confidence intervals, made with standard deviation, do not intersect. This intuitively makes sense since these countries were the ones where 9/11 had the biggest cultural impact. 
+To really measure the robustness of our findings we would need to perform a sensitivity analysis on the impact of unobserved covariates.
+
+In the following parts, we delve into this more nuanced analysis, to consider the possible positive or negative connotations of Arabs in the movies. 
 
 # Topic Modeling 
 
