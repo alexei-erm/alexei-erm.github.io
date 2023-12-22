@@ -13,6 +13,7 @@ Here are some interesting visualizations:
 
 ![moviesperyear](images/moviesperyear.png)
 
+The increase in the number of movies is constant over the years, but there is an acceleration during and after the 90s. At a first glance, we concluded that any analysis between groups of movies before versus after 2001 would have fairly equal numbers: the 2001-2011 period is shorter but has more movies, compensating for possibly longer periods of time in the pre-2001 group.
 Some of our preliminary analysis consisted of exploring the ethnicities of actors and characters in the dataset to assess the feasibility of our project:
 
 ![ethnicities all](images/ethnicities.png)
