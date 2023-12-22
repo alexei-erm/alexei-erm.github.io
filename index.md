@@ -1,4 +1,4 @@
----
+[---
 layout: page
 title:<div style="margin-top: 30px;"> 9/11 and the representation of Arabs in cinema
 cover-img: "images/dictator_ada.jpeg"
