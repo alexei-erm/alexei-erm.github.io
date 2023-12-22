@@ -13,3 +13,5 @@ Here are some interesting visualizations:
 
 ![moviesperyear]("images/moviesperyear.png")
 
+![ethnicities all]("images/ethnicities.png")
+
