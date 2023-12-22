@@ -44,9 +44,9 @@ The selected years for the study need to have a consistent representation of Ara
 ## Uhhh, last definition... what do we mean by a "western" country?
 We define a Western country as the United States, Canada, and the countries exclusively part of [Continental Europe](https://en.wikipedia.org/wiki/Europe). We are excluding, for instance, Russia and Turkey which are also in Asia. The reason for this choice was to analyse a subset of countries that are culturally similar and reacted to 9/11 in a comparable way. We could have chosen also to select only the USA, but this generated a too small subset to be studied.
 
-# The crime and war genre
+# The "War and Crime" genre
 
-One initial question we can explore is how the participation of Arab characters in the War and Crime (W&C) genre changed after 2001, if at all. Is this effect more evident in the western countries? This analysis can be made without the use of a movie's plot so it is a great place to start at. Here, we detect Arab characters in our dataset directly from the character metadata. Let's see if some trends can be spotted by plotting simple statistics at first, regarding all character and Arab character participation in W&C movies!
+One initial question we can explore is how the participation of Arab characters in the War and Crime (W&C) genre changed after 2001, if at all. Is this effect more evident in the western countries? This analysis can be made without the use of a movie's plot so it is a great place to start at. Here, we detect Arab characters in our dataset directly from the character metadata. In addition, we define War and Crime as the sum of `'Crime Fiction'`  and  `'War film'` genres, using that as an index of participation in violent and belligerent contents. Let's see if some trends can be spotted by plotting simple statistics at first, regarding all character and Arab character participation in W&C movies!
 
 ![yearly characters for w&c](images/yearly_ch_w&c.png)
 
