@@ -17,9 +17,9 @@ Some of our preliminary analysis consisted of exploring the ethnicities of actor
 
 ![ethnicities all](images/ethnicities.png)
 
-![ethnicities all](images/ethnicities.png)
-
 ![arabcharpercountry](images/arabcharpercountry.png)
+
+As can be seen in the figure above, which is initially surprising, most arab characters appear in Indian productions. This may be explained by the sheer amount of movies produced in Bollywood itself. In any case, when grouping by "western" productions and "all productions", Indian movies form the biggest counterweight to western movies. 
 
 ![arabcharperyear_regions](images/arabcharperyear_regions.png)
 
