@@ -5,7 +5,7 @@ cover-img: "images/dictator_ada.jpeg"
 subtitle: Unraveling the Reel Impact of Real-World Events on Arab Representation in Movies
 ---
 
-<div style="text-align: center;">
+<div style="display: flex; justify-content: center;">
     <iframe src="/images/lda_after.html" width="1200px" height="750px"></iframe>
 </div>
 
