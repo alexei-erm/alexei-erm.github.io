@@ -113,7 +113,7 @@ The results give support to the existence of a causal link, not confounded by th
 
 Let's now dive into the core of our study: sentiment analysis. Sentiment analysis is the process of analyzing digital text to determine if the emotional tone of the message is positive, negative, or neutral. Our objective here is to understand if there is a significant change in sentiment towards Arabic characters when depicted in US and European movies (i.e., "Western countries").
 
-To ensure that the sentiment analysis we perform is accurately related to the Arabic characters, we perform this analysis on a range of `n` words before and after the target name (local contexts). For example, considering the movie "House party 2" (1991), here's an extract of the movie summary, highlighting the detected Arabic character.
+To ensure that the sentiment analysis we perform is accurately related to the Arabic characters, we perform this analysis on a range of `n` words before and after the target name (local contexts). This choice was taken not to limit the analysis to a single sentence, considering that some informative attributes could be present in neighbor sentences. For example, considering the movie "House party 2" (1991), here's an extract of the movie summary, highlighting the detected Arabic character.
 
 _"Kid and Play get into a fight and **Bilal** then convinces Kid to ask Sydney for money. Kid tries to approach Sydney but Sydney assumes that he wants to break up with her."_
 
@@ -164,3 +164,5 @@ Finally, let's visualize the most common words for the local contexts around Ara
 </div>
 
 It is interesting to note how some semantically negative words like 'kill' and 'bomb' increase in frequency after 2001. However, it is challenging to appreciate a significant difference between the two situations with this representation.
+
+## What can we conclude?
