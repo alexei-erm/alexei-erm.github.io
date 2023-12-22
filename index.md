@@ -124,7 +124,7 @@ A key aspect of the analysis is the preprocessing part where we prepare the text
 The plot above is for movies before 2001, while the one bellow is after 2001.
 
 <div style="display: flex; justify-content: center; width: 100%;">
-    <iframe src="/images/lda_after.html" width="100%" height="850px"></iframe>
+    <iframe src="/images/lda_after.html" width="100%" height="875px"></iframe>
 </div>
 
 
