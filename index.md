@@ -121,11 +121,11 @@ If `n = 5`, the following chunk of plot summary would be considered as the conte
 
 _"Play get into a fight and **Bilal** then convinces Kid to ask Sydney"_
 
-To determine the optimal context window size for sentiment analysis, we conducted a manual exploration of hyperparameters (hyperparameter tuning). This involved iteratively trying different sizes and examining example outputs to assess the impact on sentiment analysis results. By visually inspecting the sentiment context around Arabic names in sample plots, the most effective context window size was identified as `n = 9`.
+To determine the optimal context window size for sentiment analysis, we conducted a manual exploration of hyperparameters (hyperparameter tuning). This involved iteratively trying different sizes and visually inspecting example outputs to assess the relevancy of the context around the name. As a result, the most effective context window size was identified as `n = 9`. This value is a good compromise between containing words related to the target name, and not being confounded by other entities' attributes.
 
 All of this said, let's have a look at the evolution of sentiment throughout the years.
 
-To perform sentiment analysis and get sentiment polarity scores, the VADER model is used. This model evaluates both polarity (positive/negative) and intensity (strength) of emotion of each word in a text. Then, it adds them up to obtain the sentiment score of the entire body. The model distinguishes 5 sentiment polarities:
+To perform sentiment analysis and get sentiment polarity scores, the VADER model is used. This model evaluates both polarity (positive/negative) and intensity (strength) of emotions of each word in a text. Then, it adds them up to obtain the sentiment score of the entire body. The model distinguishes 5 sentiment polarities:
 - positive
 - negative
 - neutral
@@ -139,13 +139,13 @@ The compound score is the sum of positive, negative, and neutral scores, normali
 
 The year-by-year evolution does not present a clear change of trend before and after 2001. The confidence intervals are almost always overlapping, offering little distinction even for the difference between positive and negative sentiment.
 
-Now, let's cumulate the sentiment scores of the range of years $[1972,2001]$ and $(2001,2012]$. A t-test between the two distributions, respectively for compound, positive, and negative sentiment, yields the following results:
+Now, let's cumulate the sentiment scores of the range of years 1972-2001 and 2002-2012. A t-test between the two distributions, respectively for compound, positive, and negative sentiment, yields the following results:
 
 - The p-value for the compound sentiment scores is: 0.045
 - The p-value for the positive sentiment scores is: 0.031
 - The p-value for the negative sentiment scores is: 0.56
 
-These results indicate a significant difference between the compound and positive sentiment distributions at a significance level of $\alpha = 0.05$. We can thus examine the distributions more closely.
+These results indicate a significant difference between the compound and positive sentiment distributions at a 5% significance level. We can thus examine the distributions more closely.
 
 <div style="text-align:center">
   <img src="images/distributions_pos_neg.png" alt="Sentiment Distributions Positive and Negative" >
