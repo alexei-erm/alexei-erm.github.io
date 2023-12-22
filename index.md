@@ -9,7 +9,7 @@ In the realm of cinema, the silver screen not only reflects our collective imagi
 
 Our data analysis journey delves into the intersection of reality and reel, seeking to understand how one of the most significant events of the 21st century shaped the representation of Arabs in cinema. The lens through which movies depict Arab characters, cultures, and narratives has often been subject to scrutiny, with questions raised about the perpetuation of stereotypes and the impact of real-world events on cinematic storytelling.
 
-Through our analysis of the CMU movie dataset, spanning pre and post-9/11 eras, we hope to unearth patterns, trends, and anomalies that illuminate the relationship between historical events and cinematic narratives. As we unravel the *reel impact of real-world events* (*tu-dums*), our journey promises to uncover not only the challenges but also the opportunities for more authentic storytelling in the world of cinema. We are the piñacolADA team, composed of Yahya, Filippo, Matteo, Mohammad and Alexei, so grab your popcorn, and... *Lights... Camera... Action!*
+Through our analysis of the CMU movie dataset, spanning pre and post-9/11 eras, we hope to unearth patterns, trends, and anomalies that illuminate the relationship between historical events and cinematic narratives. As we unravel the *reel impact of real-world events* (*tu-dums*), our journey promises to uncover not only the challenges but also the opportunities for more authentic storytelling in the world of cinema. So grab your popcorn, and... *Lights... Camera... Action!*
 
 *For more details about the dataset (CMU movie summary corpus), [click this link](https://alexei-erm.github.io/thedataset)*
 
