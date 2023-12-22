@@ -64,37 +64,37 @@ To be more precise in this analysis, we look at the features before and after 20
 We also want to check that a possible increase in Arab roles, a subset of the roles, is not due to the overall increase in character participation in W&C movies. 
 
 Taking as predictor the binary variable of being in a movie after 2001 and as outcome the participation in a W&C movie (also binary) we can fit a linear regression. Following what is explained in the yearly evolution, we study the trends for all characters and Arab characters both for all countries and western countries. The models give significant results in all the cases.
-For both all countries and the Western subset, we see a negative coefficient looking at the characters in general (yellow dots). It means a decrease in participation in W&C movies compared to the ones published before and after 9/11. On the contrary, Arabs show a positive correlation (green dots), but we cannot say that the one for Western countries is higher since the error bars intersect.  
+We see a negative coefficient looking at the characters in general (blue dots) in both geographical scenarios. It means a decrease in participation in W&C movies compared to the ones published before and after 9/11. On the contrary, Arabs show a positive correlation (orange dots), but we cannot say that the one for Western countries is higher since the error bars intersect.  
 
 ![Coefficients before balancing](images/Coefficients_before_bal.png)
 
-The positive correlation does not reflect causality, since we are not considering the action of confounders.  To investigate the causal link, we use an observational study scheme, with the treatment as the publication after 2001 and the outcome as the fraction of Arab characters in W&C movies. This is done for both the whole world and the western countries, generating two studies.
+A correlation does not reflect causality, since we are not considering the action of confounders. To investigate the causal link, we use an observational study scheme, with the treatment as the publication after 2001 and the outcome as the fraction of Arab characters in W&C movies. This is done for both the whole world and the western countries, generating two studies.
 Also, to say that the trend for Arabs is not due to a general increase of all characters in W&C movies, we should set another observational study and compare the output coefficients. This is out of the scope of our analysis, which uses the results shown before as the first proof of this.
 
-### Observational study on w&c movies
+### Observational study on W&C movies
 
-Are we ready for some causal diagrams and confounding factors? As mentioned, here we go with 2 sweet observational studies! Whereas for the first we use all the country of publication, for the `second` we filter for the western countries. 
+Are we ready for some causal diagrams and confounding factors? As mentioned, here we go with 2 sweet observational studies! Whereas for the _first_ we use all the countries of publication, for the _second_ we filter for the Western countries. 
 We have the following treatment (**T**) and outcome (**O**)
-- **T** Arab character participates in a film released after 2001 (`published in a western country`)
+- **T** Arab character participates in a film released after 2001
 - **O** Movie belongs to a w&c genre
 
 
-First of all, we need to discuss the possible confounders (**C**) of the causal analysis. We treat the following features:
+First, we need to discuss the causal analysis's confounders (**C**). We treat the following features:
 - **C1** Geographical zone of the movie publication
-    - effect on the treatment: cinema industry can be more or less active in a country depending on cultural and economic effect that may change during the years. E.g. boom of the Indian industry after 2000
-    - effect on the outcome: different countries have different cultures, so different incidence on a certain genre. e.g. a c&w film with Arab characters could be published more probably in the US
+    - effect on the treatment: The cinema industry can be more or less active in a country depending on cultural and economic effects that may change over the years. E.g. boom of the Indian industry after 2000
+    - effect on the outcome: different countries have different cultures, so different incidences of a certain genre. e.g. a W&C film with Arab characters could be published more probably in the US
 - **C2** Sex of the actor: 
-    - effect on the treatment: Arab females could be obstructed to be actresses for religious rules that were stricter in the past, so there could be fewer female Arab characters in the past 
-    - effect on the outcome: male characters could be used more frequently in w&c films
+    - effect on the treatment: Arab females could be obstructed from being actresses for religious rules that were stricter in the past, so there could be fewer female Arab characters in the past 
+    - effect on the outcome: male characters could be used more frequently in W&C films
 - **C3** Age of the actor at release 
-    - effect on the treatment: during the film history, it is possible that the presence of young actors was obstructed by certain legal/cultural rules
-    - effect on the outcome: young characters and therefore actors could have a role more frequently in w&c films
+    - effect on the treatment: during the film history, it is possible that certain legal/cultural rules obstructed the presence of young actors
+    - effect on the outcome: young characters and therefore actors could have a role more frequently in W&C films
 
-The information on sex and age are simply obtainable from the characters metadata. For the region, we used the information on Movie countries from the Movie metadata grouping the countries following the [United Nations](https://ourworldindata.org/world-region-map-definitions) map: 
+The information on sex and age is simply obtainable from `character.metadata.tsv`. For the region, we used the information on publication countries from `movie.metadata.tsv` grouping the countries following the [United Nations](https://ourworldindata.org/world-region-map-definitions) map: 
 
-![United nations regions](images/world-regions-sdg-united-nations.png)
+![United Nations regions](images/world-regions-sdg-united-nations.png)
 
-For the second observational study **C3** is not a possible confounder since all the western countries, where we hypothesize that the cultural influence is similar, are included in the region "Europe and North America".
+For the second observational study **C3** is not a possible confounder since all the Western countries, where we hypothesize that the cultural influence is similar, are included in the region "Europe and North America".
 Two schemes sum up the hypothesized causal links stated before:
 
 ![causal diagrams](images/Causal_diagram.png)
