@@ -94,7 +94,7 @@ The information on sex and age is simply obtainable from `character.metadata.tsv
 
 ![United Nations regions](images/world-regions-sdg-united-nations.png)
 
-For the second observational study **C3** is not a possible confounder since all the Western countries, where we hypothesize that the cultural influence is similar, are included in the region "Europe and North America".
+For the second observational study **C1** is not a possible confounder since all the Western countries, where we hypothesize that the cultural influence is similar, are included in the region "Europe and North America".
 Two schemes sum up the hypothesized causal links stated before:
 
 ![causal diagrams](images/Causal_diagram.png)
