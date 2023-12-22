@@ -61,9 +61,9 @@ In parallel, we filter for films published in Western countries, to understand i
 The Western country's time evolution is similar with respect to all countries' case. Accounting for all characters, we notice again a stagnant trend with a decrease after 2003. Arabs show a more evident lack of data before 2000 with a large confidence interval. Still, we can see the local increase in the years range 2002-2006.
 
 To be more precise in this analysis, we look at the features before and after 2001. This grouping is done to avoid the problem of sparsity of data for Arabs, especially during the last century movies, that leads to high uncertainty.
-We also want to check that a possible increase of Arab roles, a subset of the roles, is not due to the overall increase in character participation in W&C movies. 
+We also want to check that a possible increase in Arab roles, a subset of the roles, is not due to the overall increase in character participation in W&C movies. 
 
-The linear regression gives significant results in all the 4 cases.
+Taking as predictor the binary variable of being in a movie after 2001 and as outcome the participation in a W&C movie (also binary) we can fit a linear regression. Following what is explained in the yearly evolution, we study the trends for all characters and Arab characters both for all countries and western countries. The models give significant results in all the cases.
 For both all countries and the Western subset, we see a negative coefficient looking at the characters in general (yellow dots). It means a decrease in participation in W&C movies compared to the ones published before and after 9/11. On the contrary, Arabs show a positive correlation (green dots), but we cannot say that the one for Western countries is higher since the error bars intersect.  
 
 ![Coefficients before balancing](images/Coefficients_before_bal.png)
