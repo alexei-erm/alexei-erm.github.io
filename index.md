@@ -109,6 +109,17 @@ After balancing, we use the linear regression model, as done before the observat
 
 The results give support to the existence of a causal link, not confounded by the observed variables. Both models give positive coefficients with a significant p-value, with a 6% (all countries) and 12% (western countries) increase in probability for Arabs' participation in W&C movies. We can state that this correlation intensifies when accounting only for Western countries. This intuitively makes sense since these countries were the ones where 9/11 had the biggest cultural impact. This result does not consider the possible positive or negative connotations in the movies. In the following parts, we delve into this more nuanced analysis.
 
+# Topic Modeling 
+
+In the "Topic Modeling » section, we try to  present a comprehensive exploration into the portrayal of Arabic characters in Western movies, spanning the years 1972 to 2013. The analysis filters and categorizes movies based on the inclusion of Arabic characters. The study then divides the movies into two temporal categories – those released before and after the pivotal event of 9/11 in 2001, an approach that tries to see the influence of such an event on the portrayal of arabic characters in hollywood. 
+
+We use the Latent Dirichlet Allocation (LDA) model, a widely used technique in natural language processing, to discern latent topics within the movie summaries. This analysis is carried out separately for films released before and after 2001, providing a comparative perspective on how the representation of Arabic characters might have shifted in response to the 9/11 attacks.
+
+A key aspect of the analysis is the preprocessing part where we prepare the textual data by tokenizing the summaries into lists of words. We then create a Gensim Dictionary to convert the words into unique numerical identifiers. Finally, a bag-of-words representation is generated for each movie summary using the dictionary, resulting in the corpus containing the document-term matrix. We then preprocess the text to remove stopwords and character names from the movie plots tailored for the LDA model. This step ensures that the topic modeling process is not influenced by recurring character names or common stopwords, thereby enhancing the precision of the thematic analysis. 
+
+We can see from the  pyLDA visualization that there is not much difference between the movies before and after the event. In general, when looking through the most frequent words of each topic, we can see the presence of words with bad connotation like kill, bomb, attack , police etc that have an quite high overall term frequency which indicates their importance to the subject. Nevertheless
+we cannot really conclude if there is a shift in 2001 after the event since both models contain topics with the common words having the same distribution.
+
 # Sentiment Analysis
 
 Let's now dive into the core of our study: sentiment analysis. Sentiment analysis is the process of analyzing digital text to determine if the emotional tone of the message is positive, negative, or neutral. Our objective here is to understand if there is a significant change in sentiment towards Arabic characters when depicted in US and European movies (i.e., "Western countries").
