@@ -6,7 +6,7 @@ subtitle: Unraveling the Reel Impact of Real-World Events on Arab Representation
 ---
 
 <div style="display: flex; justify-content: center;">
-    <iframe src="/images/lda_after.html" width="50%" height="750px"></iframe>
+    <iframe src="/images/lda_after.html" width="100%" height="750px"></iframe>
 </div>
 
 In the realm of cinema, the silver screen not only reflects our collective imagination but also mirrors the complex tapestry of societal changes and historical events. One such moment that reverberated globally was the tragic day of September 11, 2001. Beyond its immediate and profound impact on geopolitics, security measures, and the psyche of nations, the events of 9/11 had a far-reaching influence on the cultural landscape, including the portrayal of Arab identities in the movies.
